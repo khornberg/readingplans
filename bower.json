@@ -32,6 +32,7 @@
     "test",
     "tests",
     "*.php",
+    "bower.json",
     "README.md"
   ]
 }
