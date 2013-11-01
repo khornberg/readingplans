@@ -1,0 +1,37 @@
+{
+  "name": "Bible Reading Plans",
+  "version": "0.1.0",
+  "homepage": "https://github.com/khornberg/readingplans",
+  "authors": [
+    "Kyle Hornberg <kyle.hornberg@gmail.com>"
+  ],
+  "description": "Bible reading plans in json",
+  "keywords": [
+    "bible",
+    "plan",
+    "esv",
+    "chronologial",
+    "word",
+    "study",
+    "gospel",
+    "literary",
+    "esv",
+    "prophet",
+    "chronicles",
+    "israel",
+    "pentateuch",
+    "m'cheyne",
+    "literature",
+    "epistle"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.php",
+    "README.md"
+  ]
+}
