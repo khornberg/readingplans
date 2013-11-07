@@ -392,22 +392,40 @@ class bibleplan {
 
 $bibleplan = new bibleplan();
 
-function s($day) {
-	return explode(";", $day);
+/**
+ * Prepares data for json by trimming it and removing any partial verse annotations
+ * @param  array $day Bible references for a day
+ * @return array      Pepared bible references
+ */
+function prepare($day) {
+      $references = array();
+      foreach (explode(";", $day) as $ref) {
+            if (strpos($ref, ",") !== FALSE) {
+                  foreach (explode(",", $ref) as $str) {
+                        $references[] = trim(preg_replace('/[a-z]{1}(?=-|$)/', '', $str));
+                  }
+            } else {
+                  $references[] = trim(preg_replace('/[a-z]{1}(?=-|$)/', '', $ref));
+            }
+      }
+      return $references;
 }
 $plan = array();
 $tmp_plan = array();
+$tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
-   $tmp_plan = array_merge($tmp_plan, s($day));
+   $d = prepare($day);
+   $tmp_plan[] = $d; 
+   $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
-$plan['data'] = $tmp_plan;
+
+$plan['data2'] = $tmp_plan;
+$plan['data'] = $tmp_plan2;
 $plan['id'] = $bibleplan->getId();
 $plan['name'] = $bibleplan->getName();
 $plan['info'] = $bibleplan->getInfo();
 
 $plan_json = json_encode($plan);
 
-echo $plan_json;
-
-file_put_contents('readingplans/'.$bibleplan->getId().'.json', $plan_json);
+file_put_contents($bibleplan->getId().'.json', $plan_json);
 ?>
