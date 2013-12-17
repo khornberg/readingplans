@@ -74,7 +74,7 @@ class bibleplan {
             52 => 'Psalm 52;Genesis 47:13-26;2Chronicles 25;Acts 18:23-19:22',
             53 => 'Psalm 53;Genesis 47:27-48:22;2Chronicles 26;Acts 19:23-20:16',
             54 => 'Psalm 54;Genesis 49;2Chronicles 27;Acts 20:17-21:16',
-            55 => 'Psalm 55;Genesis 50:1-14;2Chronicles 28;Acts 21:17 -23:11',
+            55 => 'Psalm 55;Genesis 50:1-14;2Chronicles 28;Acts 21:17-23:11',
             56 => 'Psalm 56;Genesis 50:15-26;2Chronicles 29;Acts 23:12-24:27',
             57 => 'Psalm 57;Exodus 1:1-21;2Chronicles 30;Acts 25-26',
             58 => 'Psalm 58;Exodus 1:22-2:22;2Chronicles 31;Acts 27:1-28:15',

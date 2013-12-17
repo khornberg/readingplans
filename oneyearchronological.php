@@ -121,7 +121,7 @@ class bibleplan {
             99 => '1Samuel 1:9-4:11',
             100 => '1Samuel 4:12-8:22',
             101 => '1Samuel 9:1-12:25',
-            102 => '1Chronicles 9:35-39;1Samuel 13:1-5;1Samuel 13:19-23;1Samuel 13:6-18;;1Samuel 14:1-52',
+            102 => '1Chronicles 9:35-39;1Samuel 13:1-5;1Samuel 13:19-23;1Samuel 13:6-18;1Samuel 14:1-52',
             103 => '1Samuel 15:1-17:31',
             104 => '1Samuel 17:32-19:17;Psalm 59;1Samuel 19:18-24',
             105 => '1Samuel 20:1-21:15;Psalm 34',

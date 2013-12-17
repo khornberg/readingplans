@@ -11,8 +11,13 @@ Execute the file with `php *file.php*`
 
 ```
 'data': [array of strings],
-'data2': [array of [arrays of strings]],
+'data2': [array of [array of strings]],
 'id':Id,
 'name':Name,
 'info':Info
 ```
+
+## Change Log
+
+### 0.2.1
+* Fix reference errors
