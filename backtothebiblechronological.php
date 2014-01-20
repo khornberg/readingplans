@@ -13,6 +13,10 @@ class bibleplan {
         return 'backtothebiblechronological';
     }
 
+    function getAbbv() {
+        return 'bttbc';
+    }
+
     function getInfo() {
         $info = "Copyright Back to the Bible <br /><a target='_new' href='http://www.backtothebible.org'>www.backtothebible.org</a>";
         return $info;
@@ -422,6 +426,7 @@ foreach ($bibleplan->getData() as $day) {
 $plan['data2'] = $tmp_plan;
 $plan['data'] = $tmp_plan2;
 $plan['id'] = $bibleplan->getId();
+$plan['abbv'] = $bibleplan->getAbbv();
 $plan['name'] = $bibleplan->getName();
 $plan['info'] = $bibleplan->getInfo();
 

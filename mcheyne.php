@@ -9,6 +9,10 @@ class bibleplan {
         return 'mcheyne';
     }
 
+    function getAbbv() {
+        return 'm';
+    }
+
     function getName() {
         return "M'Cheyne";
     }
@@ -422,6 +426,7 @@ foreach ($bibleplan->getData() as $day) {
 $plan['data2'] = $tmp_plan;
 $plan['data'] = $tmp_plan2;
 $plan['id'] = $bibleplan->getId();
+$plan['abbv'] = $bibleplan->getAbbv();
 $plan['name'] = $bibleplan->getName();
 $plan['info'] = $bibleplan->getInfo();
 
