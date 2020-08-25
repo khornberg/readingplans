@@ -253,9 +253,9 @@ class bibleplan {
             227 => 'Nehemiah 9:22-10:39;1Corinthians 9:19-10:13;Psalm 34:1-10;Proverbs 21:13',
             228 => 'Nehemiah 11:1-12:26;1Corinthians 10:14-11:2;Psalm 34:11-22;Proverbs 21:14-16',
             229 => 'Nehemiah 12:27-13:31;1Corinthians 11:3-16;Psalm 35:1-16;Proverbs 21:17-18',
-            230 => 'Ester 1:1-3:15;1Corinthians 11:17-34;Psalm 35:17-28;Proverbs 21:19-20',
-            231 => 'Ester 4:1-7:10;1Corinthians 12:1-26;Psalm 36:1-12;Proverbs 21:21-22',
-            232 => 'Ester 8:1-10:3;1Corinthians 12:27-13:13;Psalm 37:1-11;Proverbs 21:23-24',
+            230 => 'Esther 1:1-3:15;1Corinthians 11:17-34;Psalm 35:17-28;Proverbs 21:19-20',
+            231 => 'Esther 4:1-7:10;1Corinthians 12:1-26;Psalm 36:1-12;Proverbs 21:21-22',
+            232 => 'Esther 8:1-10:3;1Corinthians 12:27-13:13;Psalm 37:1-11;Proverbs 21:23-24',
             233 => 'Job 1:1-3:26;1Corinthians 14:1-17;Psalm 37:12-29;Proverbs 21:25-26',
             234 => 'Job 4:1-7:21;1Corinthians 14:18-40;Psalm 37:30-40;Proverbs 21:27',
             235 => 'Job 8:1-11:20;1Corinthians 15:1-28;Psalm 38:1-22;Proverbs 21:28-29',
@@ -418,7 +418,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 

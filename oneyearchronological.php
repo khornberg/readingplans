@@ -418,7 +418,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 

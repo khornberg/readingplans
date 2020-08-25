@@ -111,15 +111,15 @@ class bibleplan {
             85 => 'Psalm 85;Exodus 30-31;Nehemiah 11:1-12:26;1Corinthians 3',
             86 => 'Psalm 86;Exodus 32;Nehemiah 12:27-47;1Corinthians 4',
             87 => 'Psalm 87;Exodus 33;Nehemiah 13;1Corinthians 5',
-            88 => 'Psalm 88;Exodus 34;Ester 1;1Corinthians 6',
-            89 => 'Psalm 89;Exodus 35:1-29;Ester 2;1Corinthians 7',
-            90 => 'Psalm 90;Exodus 35:30-36:38;Ester 3;1Corinthians 8',
-            91 => 'Psalm 91;Exodus 37;Ester 4;1Corinthians 9',
-            92 => 'Psalm 92;Exodus 38;Ester 5;1Corinthians 10:1-11:1',
-            93 => 'Psalm 93;Exodus 39;Ester 6;1Corinthians 11:2-34',
-            94 => 'Psalm 94;Exodus 40;Ester 7;1Corinthians 12',
-            95 => 'Psalm 95;Leviticus 1;Ester 8;1Corinthians 13',
-            96 => 'Psalm 96;Leviticus 2;Ester 9-10;1Corinthians 14',
+            88 => 'Psalm 88;Exodus 34;Esther 1;1Corinthians 6',
+            89 => 'Psalm 89;Exodus 35:1-29;Esther 2;1Corinthians 7',
+            90 => 'Psalm 90;Exodus 35:30-36:38;Esther 3;1Corinthians 8',
+            91 => 'Psalm 91;Exodus 37;Esther 4;1Corinthians 9',
+            92 => 'Psalm 92;Exodus 38;Esther 5;1Corinthians 10:1-11:1',
+            93 => 'Psalm 93;Exodus 39;Esther 6;1Corinthians 11:2-34',
+            94 => 'Psalm 94;Exodus 40;Esther 7;1Corinthians 12',
+            95 => 'Psalm 95;Leviticus 1;Esther 8;1Corinthians 13',
+            96 => 'Psalm 96;Leviticus 2;Esther 9-10;1Corinthians 14',
             97 => 'Psalm 97;Leviticus 3;Isaiah 1;1Corinthians 15',
             98 => 'Psalm 98;Leviticus 4:1-5:13;Isaiah 2;1Corinthians 16',
             99 => 'Psalm 99;Leviticus 5:14-6:7;Isaiah 3-4;2Corinthians 1:1-11',
@@ -418,7 +418,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 

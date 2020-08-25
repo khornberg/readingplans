@@ -47,15 +47,15 @@ class bibleplan {
             21 => 'Genesis 22;Matthew 21;Nehemiah 11;Acts 21',
             22 => 'Genesis 23;Matthew 22;Nehemiah 12;Acts 22',
             23 => 'Genesis 24;Matthew 23;Nehemiah 13;Acts 23',
-            24 => 'Genesis 25;Matthew 24;Ester 1;Acts 24',
-            25 => 'Genesis 26;Matthew 25;Ester 2;Acts 25',
-            26 => 'Genesis 27;Matthew 26;Ester 3;Acts 26',
-            27 => 'Genesis 28;Matthew 27;Ester 4;Acts 27',
-            28 => 'Genesis 29;Matthew 28;Ester 5;Acts 28',
-            29 => 'Genesis 30;Mark 1;Ester 6;Romans 1',
-            30 => 'Genesis 31;Mark 2;Ester 7;Romans 2',
-            31 => 'Genesis 32;Mark 3;Ester 8;Romans 3',
-            32 => 'Genesis 33;Mark 4;Ester 9-10;Romans 4',
+            24 => 'Genesis 25;Matthew 24;Esther 1;Acts 24',
+            25 => 'Genesis 26;Matthew 25;Esther 2;Acts 25',
+            26 => 'Genesis 27;Matthew 26;Esther 3;Acts 26',
+            27 => 'Genesis 28;Matthew 27;Esther 4;Acts 27',
+            28 => 'Genesis 29;Matthew 28;Esther 5;Acts 28',
+            29 => 'Genesis 30;Mark 1;Esther 6;Romans 1',
+            30 => 'Genesis 31;Mark 2;Esther 7;Romans 2',
+            31 => 'Genesis 32;Mark 3;Esther 8;Romans 3',
+            32 => 'Genesis 33;Mark 4;Esther 9-10;Romans 4',
             33 => 'Genesis 34;Mark 5;Job 1;Romans 5',
             34 => 'Genesis 35-36;Mark 6;Job 2;Romans 6',
             35 => 'Genesis 37;Mark 7;Job 3;Romans 7',
@@ -419,7 +419,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 

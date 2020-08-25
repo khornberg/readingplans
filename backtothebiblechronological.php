@@ -289,8 +289,8 @@ class bibleplan {
             263 => 'Haggai 1-2',
             264 => 'Zechariah 1-7',
             265 => 'Zechariah 8-14',
-            266 => 'Ester 1-5',
-            267 => 'Ester 6-10',
+            266 => 'Esther 1-5',
+            267 => 'Esther 6-10',
             268 => 'Ezra 7-10',
             269 => 'Nehemiah 1-5',
             270 => 'Nehemiah 6-7',
@@ -419,7 +419,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 

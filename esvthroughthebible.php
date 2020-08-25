@@ -195,9 +195,9 @@ class bibleplan {
             169 => 'Nehemiah 7-8;Acts 3',
             170 => 'Nehemiah 9-11;Acts 4:1-22',
             171 => 'Nehemiah 12-13;Acts 4:23-37',
-            172 => 'Ester 1-3;Acts 5:1-16',
-            173 => 'Ester 4-6;Acts 5:17-42',
-            174 => 'Ester 7-10;Acts 6',
+            172 => 'Esther 1-3;Acts 5:1-16',
+            173 => 'Esther 4-6;Acts 5:17-42',
+            174 => 'Esther 7-10;Acts 6',
             175 => 'Job 1-3;Acts 7:1-19',
             176 => 'Job 4-6;Acts 7:20-43',
             177 => 'Job 7-9;Acts 7:44-60',
@@ -418,7 +418,7 @@ $tmp_plan = array();
 $tmp_plan2 = array();
 foreach ($bibleplan->getData() as $day) {
    $d = prepare($day);
-   $tmp_plan[] = $d; 
+   $tmp_plan[] = $d;
    $tmp_plan2 = array_merge($tmp_plan2, $d);
 }
 
